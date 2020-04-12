@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Tutorial</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{ 
+            font-family: DFKai-SB, BiauKai,KaiTi, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Covid-01-Home.html">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    病毒醫學
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Covid-11-VirusAcknowledge.html">認識病毒</a>
+                    <a class="dropdown-item" href="Covid-12-VirusSymptom.html">感染症狀</a>
+                    <a class="dropdown-item" href="Covid-13-VirusInspection.html">檢疫技術</a>
+                    <a class="dropdown-item" href="Covid-14-VirusResearch.html">醫藥研究</a>
+                    <a class="dropdown-item" href="Covid-15-VirusConvalescence.html">療養建議</a>
+                </div>
+            </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        疫情趨勢
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Covid-21-TrendNews.html">新聞摘要</a>
+                        <a class="dropdown-item" href="Covid-22-TrendGlobal.html">全球</a>
+                        <a class="dropdown-item" href="Covid-23-TrendTaiwan.html">台灣</a>
+                        <a class="dropdown-item" href="Covid-24-TrendChina.html">大陸</a>
+                        <a class="dropdown-item" href="Covid-25-TrendUS.html">美國</a>
+                        <a class="dropdown-item" href="Covid-26-TrendCanada.html">加拿大</a>
+                    </div>
+                </li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    防範措施
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Covid-31-PreventionMask.html">口罩採購</a>
+                    <a class="dropdown-item" href="Covid-32-PreventionBasic.html">防疫基礎</a>
+                    <a class="dropdown-item" href="Covid-33-PreventionAtHome.html">居家隔離</a>
+                    <a class="dropdown-item" href="Covid-34-PreventionAtWork.html">工作防疫</a>
+                    <a class="dropdown-item" href="Covid-35-PreventionInTravel.html">旅程防疫</a>
+                </div>
+            </li>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                社會影響
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Covid-41-ImpactHistory.html">見證歷史</a>
+                <a class="dropdown-item" href="Covid-42-ImpactEconomic.html">經濟衝擊</a>
+                <a class="dropdown-item" href="Covid-43-ImpactMaterial.html">物質短缺</a>
+                <a class="dropdown-item" href="Covid-44-ImpactTransportation.html">國際交通</a>
+            </div>
+        </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h4>2.1 新聞摘要</h4>
+        <div class="row mt-1">
+            <div class="col-lg-12">
+                <p>
+                    國際疫情新聞
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#Latest">最新新聞</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Italy">義大利</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Germany">德國</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#UnitedKingdom">英國</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Japan">日本</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Korea">韓國</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Singapore">新加坡</a>
+                </li>                                    
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="Latest">
+                    <ul>
+                        <li>聯合報 <a href="https://udn.com/news/story/120958/4467012">2020/04/04</a>:&nbsp;台鐵高鐵明起列車停售便當飲料 車上勿飲食下車才可吃</li>
+                        <li>自由時報 <a href="https://news.ltn.com.tw/news/politics/breakingnews/3122529">2020/04/04</a>:&nbsp;向全球分享「台灣模式」！ 美國務院讚：台灣是防疫領導者</li>
+                        <li>蘋果即時 <a href="https://tw.appledaily.com/new/realtime/20200404/1727601/?fbclid=IwAR25P-RInUhY5fpFwQKTf3J7vM2DwSfeDT3V82Mfbf79L3Sjp5_jtR5yNsA">2020/04/04</a>:&nbsp;【國家級警報】社交限令首發「暫勿前往」！指揮中心對11景區發布告警訊息</li>
+                        <li>LINEToday <a href="https://today.line.me/TW/pc/article/jQOZ9g?utm_source=lineshare">2020/04/04</a>:&nbsp;美日春假後確診數5倍成長　清明連假各大景點都是人！台大教授：快回家</li>
+                        <li>LINEToday <a href="https://today.line.me/TW/pc/article/m6Q7D2?utm_source=lineshare">2020/04/03</a>:&nbsp;專家列大台北「這5行政區」染疫高風險</li>
+                            <ul>
+                            <li>台北市大安區、新北市板橋區、新北市中和區、新北市三重區以及新北市新莊區風險值最高</li>
+                            </ul>
+                            </ul>
+                        <div class="separator" style="clear: both; text-align: center;">
+                        <a href="https://1.bp.blogspot.com/-ZaSD9AFI9is/XohCfJsTuDI/AAAAAAAAU_c/Q_ji2VFcJaQSaZ3GCO9q_cWYxbISbf0QACNcBGAsYHQ/s1600/S__38977594.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="376" data-original-width="663" height="226" src="https://1.bp.blogspot.com/-ZaSD9AFI9is/XohCfJsTuDI/AAAAAAAAU_c/Q_ji2VFcJaQSaZ3GCO9q_cWYxbISbf0QACNcBGAsYHQ/s400/S__38977594.jpg" width="400" /></a></div>
+                        <div>
+                        <br /></div>
+                        <ul>
+                        <li>自由時報&nbsp;<a href="https://news.ltn.com.tw/news/life/breakingnews/3118450">2020/03/31</a>: 為防疫做準備 陳時中：公布社交距離1公尺規定</li>
+                        <li>BBC News <a href="https://www.bbc.com/zhongwen/trad/world-52091419">2020/03/31</a>:&nbsp;肺炎疫情：關於新型冠狀病毒，這九個問題我們尚無答案</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="Italy">
+                    <ul>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6812445338427720204/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1586209185&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=2020040705394501001404701502610C51&amp;group_id=6812445338427720204">2020/04/06</a>:&nbsp;意大利：收到欧盟迟到的道歉信，回看走错的每一步</li>
+                        <li>西瓜網 <a href="https://www.ixigua.com/i6808787554192589320/">2020/03/27</a>:&nbsp;意大利六千医患已感染，德国较低死亡率成谜，专家道出3点真相</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="Germany">
+                    <ul>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6811511306068165131/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1585952154&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202004040615540100140470390597F3A8&amp;group_id=6811511306068165131">2020/04/03</a>:&nbsp;死亡率不到2%，每周检测50万人，默克尔政府满意度创新高，德国是怎么做到的？</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6808269869516063235/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1585256285&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=2020032704580501001404702001909BEC&amp;group_id=6808269869516063235">2020/03/26</a>:&nbsp;德国疫情日记9：死亡率为何如此之低？</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6808496426201383428/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1585255681&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202003270448000100140400903B7B2893&amp;group_id=6808496426201383428">2020/03/26</a>:&nbsp;确诊人数破4万的德国，为何还有余力收治意大利重症患者？</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6808447025529487883/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1585255650&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=2020032704473001001404708012871AA8&amp;group_id=6808447025529487883">2020/03/26</a>:&nbsp;德国病毒感染者死亡率低于其他国家，真实原因竟然是护士</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6807308285545284099/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1584995965&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=20200324043925010014047080097B4EC5&amp;group_id=6807308285545284099">2020/03/23</a>:&nbsp;病毒感染死亡率全球倒数第一，德国为何能做到？离不开这两个原因</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="UnitedKingdom">
+                    <ul>
+                        <li>西瓜視頻 <a href="https://www.ixigua.com/i6813631118445642243/">2020/04/09</a>:&nbsp;死亡率为德国三倍，英国官员承认抗疫失误：应早点开展大规模检测</li>
+                        <li>今周刊&nbsp;<a href="https://www.businesstoday.com.tw/article/category/80392/post/202003220002/%E4%BB%96%E5%88%86%E6%9E%90%E5%8F%B0%E7%81%A3%E3%80%81%E8%8B%B1%E5%9C%8B%E9%98%B2%E7%96%AB%E7%AD%96%E7%95%A5%E5%B7%AE%E7%95%B0%EF%BC%9A%E5%8F%B0%E7%81%A3%E6%8E%A1%E9%A1%9E%E9%98%B2%E5%A0%B5%E6%A8%A1%E5%BC%8F%EF%BC%8C%E6%88%90%E6%95%97%E5%9C%A8%E3%80%8C2%E4%BB%B6%E4%BA%8B%E3%80%8D">2020/03/22</a>:&nbsp;他分析台灣、英國防疫策略差異：台灣採類防堵模式，成敗在「2件事」</li>
+                        <li>BBC News <a href="https://www.bbc.com/zhongwen/trad/uk-51912360">2020/03/16</a>: 英國出台「避險」政策 群體免疫與當局的科學邏輯</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="Japan">
+                    <ul>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6812069935041217035/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1586118921&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202004060435210100140470402A59A209&amp;group_id=6812069935041217035">2020/04/05</a>:&nbsp;疫情或大暴发！东京半数感染者不知被谁感染，年轻人不接调查电话</li>
+                        <li>今日頭條<a href="https://www.toutiao.com/a6811462724430594568/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1586032813&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202004050440130100140470181C0BC671&amp;group_id=6811462724430594568"> 2020/04/03</a>:&nbsp;为什么日本疫情起步早却增幅小？国民性格起了大作用</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6806542613647196679/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1584830284&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202003220638040100140470372540964E&amp;group_id=6806542613647196679">2020/03/21</a>:&nbsp;&nbsp;为什么日本疫情没有大爆发?来看看日本是怎么做的</li>
+                        </ul>
+                </div>
+                <div class="tab-pane fade" id="Korea">
+                    <br />
+                    <ul>
+                        <li>西瓜視頻 <a href="https://www.ixigua.com/i6806269618546541067/">2020/03/20:</a>&nbsp;韩国疫情意外消退</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="Singapore">
+                    <ul>
+                        <li>西瓜視頻 <a href="https://www.ixigua.com/i6813613356671304200/">2020/04/09</a>:&nbsp;新加坡第二轮疫情开始爆发！</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6812418190505673227/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1586143376&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202004061122560100140470122FA75BED&amp;group_id=6812418190505673227">2020/04/05</a>:&nbsp;今天确诊破百人，总计1309人 |新加坡政府说食品价格或波动</li>
+                        <li>今日頭條 <a href="https://www.toutiao.com/a6805380419362488843/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1584570689&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=202003190631290100140470291D73AC30&amp;group_id=6805380419362488843">2020/03/18</a>:&nbsp;《柳叶刀》:如何遏制社区传播？新加坡复盘3起“跨国”聚集性疫情</li>
+                        <li>今日頭條&nbsp;<a href="https://www.toutiao.com/a6798477823305581069/?tt_from=copy_link&amp;utm_campaign=client_share&amp;timestamp=1582929089&amp;app=news_article&amp;utm_source=copy_link&amp;utm_medium=toutiao_ios&amp;req_id=2020022906312801001404702924AD066F&amp;group_id=6798477823305581069">2020/02/28</a>:&nbsp;两种模式——中国和新加坡</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

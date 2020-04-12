@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Tutorial</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{ 
+            font-family: DFKai-SB, BiauKai,KaiTi, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Covid-01-Home.html">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    病毒醫學
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Covid-11-VirusAcknowledge.html">認識病毒</a>
+                    <a class="dropdown-item" href="Covid-12-VirusSymptom.html">感染症狀</a>
+                    <a class="dropdown-item" href="Covid-13-VirusInspection.html">檢疫技術</a>
+                    <a class="dropdown-item" href="Covid-14-VirusResearch.html">醫藥研究</a>
+                    <a class="dropdown-item" href="Covid-15-VirusConvalescence.html">療養建議</a>
+                </div>
+            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        疫情趨勢
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Covid-21-TrendNews.html">新聞摘要</a>
+                        <a class="dropdown-item" href="Covid-22-TrendGlobal.html">全球</a>
+                        <a class="dropdown-item" href="Covid-23-TrendTaiwan.html">台灣</a>
+                        <a class="dropdown-item" href="Covid-24-TrendChina.html">大陸</a>
+                        <a class="dropdown-item" href="Covid-25-TrendUS.html">美國</a>
+                        <a class="dropdown-item" href="Covid-26-TrendCanada.html">加拿大</a>
+                    </div>
+                </li>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    防範措施
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Covid-31-PreventionMask.html">口罩採購</a>
+                    <a class="dropdown-item" href="Covid-32-PreventionBasic.html">防疫基礎</a>
+                    <a class="dropdown-item" href="Covid-33-PreventionAtHome.html">居家隔離</a>
+                    <a class="dropdown-item" href="Covid-34-PreventionAtWork.html">工作防疫</a>
+                    <a class="dropdown-item" href="Covid-35-PreventionInTravel.html">旅程防疫</a>
+                </div>
+            </li>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                社會影響
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Covid-41-ImpactHistory.html">見證歷史</a>
+                <a class="dropdown-item" href="Covid-42-ImpactEconomic.html">經濟衝擊</a>
+                <a class="dropdown-item" href="Covid-43-ImpactMaterial.html">物質短缺</a>
+                <a class="dropdown-item" href="Covid-44-ImpactTransportation.html">國際交通</a>
+            </div>
+        </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4>3.1 口罩採購</h4>
+        <div class="row bg-light">
+            <h5>口罩實名制 2.0</h5>
+        </div>
+        <div class="row">
+            <div class="card col-12 col-md-6">
+                <div class="card-header pb-0"><h5>2.0 作業辦法</h5></div>
+                <div class="card-body">
+                    <ol>
+                        <li>採用網路預購，網路轉帳，再由全台六大超商領取</li>
+                        <li>網路預購原則跟實體通路一樣，大人每7天買3片。</li>
+                        <li>口罩: 每片5元</li>
+                        <li>物流費：每筆訂單運費7元。</li>
+                    </ol>
+                    <img src="figure/FIG-03-01-shoplogo.png" class="img-fluid" style="width:60%" alt="Mask Vendors Logo"></img>
+                    <img src="figure/FIG-03-01-shoplogo3.png" class="img-fluid img-thumbnail" style="width:16%" alt="Mask Vendors Logo3"></img>
+                    <img src="figure/FIG-03-01-shoplogo2.png" class="img-fluid img-thumbnail" style="width:20%" alt="Mask Vendors Logo2"></img>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6">
+                <div class="card-header pb-0"><h5>2.0 網購流程</h5></div>
+                <div class="card-body">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    1. 網路預購
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>預購時間：
+                                            <ul>
+                                                <li>第4輪： 4/8 08:00 - 4/10 20:00</li>
+                                                <li>第5輪： 4/15 08:00 - 4/17 20:00</li>
+                                            </ul>
+                                        </li>
+                                        <li>預購方式：
+                                            <ul>
+                                                <li>電腦：使用健保卡或自然人憑證至 “eMask 口罩預購系統”</li>
+                                                <li>手機：藉由“健保快易通” 行動App</li>
+                                            </ul>
+                                        </li>
+                                        <li>身份認證：
+                                            <ol>
+                                                <li>手機認證: 適用本國籍人士、手機門號是本人名義申辦、且門號為月租型搭配行動上網。</li>
+                                                <li>網路插卡: 適用手機門號非以本人名義申辦、或具健保卡之外籍人士，請準備健保卡及戶口名簿，至【健保卡網路服務註冊網頁】註冊，電腦註冊完再綁定手機預購。</li>
+                                                <li>臨櫃辦理: 無法使用手機認證的民眾，請帶健保卡、身分證及戶口名簿至健保署服務據點使用電腦註冊後完成手機綁定。</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                    2. 線上繳費
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>確認預購抽籤成功：由電子郵箱通知，或直接由預購網站查詢</li>
+                                        <li>繳費時間
+                                            <ul>
+                                                <li>第4輪：4/11 08:00 - 4/13 20:00</li>
+                                                <li>第5輪：4/18 08:00 - 4/20 20:00</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            繳費方式：信用卡，網路銀行，實體ATM 轉帳 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                    3. 超商取貨
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            依據預約時設定的超商取貨，包含7-11、全家、萊爾富、OK、全聯、美聯社 六大超商門市
+                                            <ul>
+                                                <li>第4輪：4/16 - 4/29</li>
+                                                <li>第5輪：4/23 - 5/6</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            取貨依據身分證末四碼，及手機短訊通知的“取貨序號”登入超商 事務機Kiosk 列印取貨單 或由 超商對應的手機App 獲得取貨條碼。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                 
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row bg-light">
+            <h5>口罩實名制 1.0</h5>
+        </div>
+        <div class="row">
+            <div class="card col-12 col-md-6">
+                <div class="card-header pb-0"><h5>1.0 作業辦法</h5></div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#Requirements-1">
+                        採購資格
+                    </button>
+                    <div class="collapse" id="Requirements-1">
+                        <div class="card card-body">
+                            <ol>
+                                <li>
+                                    本國人
+                                    <ol>
+                                        <li>已有健保卡者，請持健保卡至健保特約藥局購買。</li>
+                                        <li>健保卡者，請儘速辦理加保手續或補換發健保卡後，持健保卡購買。</li>
+                                        <li>尚未加保者，請持身分證或戶口名簿購買。</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    外籍人士
+                                    <ol>
+                                        <li>具有健保加保身分者，請持健保卡至健保特約藥局購買。</li>
+                                        <li>未具健保加保資格者:外國人、外籍(大陸)配偶、陸生等，請持居留證或入出境許可證購買。</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#Procedure-1">
+                        實施要點
+                    </button>
+                    <div class="collapse-show" id="Procedure-1">
+                        <div class="card card-body">
+                            <ol>
+                                <li>由全台健保特約藥局及配送衛生所販售</li>
+                                <li>成人口罩每次可買9片 (每14天採購量)</li>
+                                <li>兒童口罩可買10片 (每14天採購量)</li>
+                                <li>自4/9起藥局購買不限單雙號、購買日期無限制。</li>
+                                <li>健保卡可任選要買成人或兒童口罩。</li>
+                                <li>最新口罩購買地點：健保特約藥局、衛生所 買口罩</li>
+                                <li>口罩每片5元</li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card col-12 col-md-6">
+                <div class="card-header pb-0"><h5>1.0 特約藥局查詢</h5></div>
+                <div class="card-body">
+                    <div class="btn-group-vertical" rolt="group">
+                        <a href="https://mask.goodideas-studio.com/" role="button" class="btn btn-outline-primary">即時口罩地圖 by GDG@好想工作室</a>
+                        <a href="https://kiang.github.io/pharmacies/" role="button" class="btn btn-outline-primary">藥局口罩地圖 by Kiang</a>
+                        <a href="https://wenyo.github.io/maskmap/" role="button" class="btn btn-outline-primary">口罩即時查 by Wenyo</a>
+                        <a href="https://geobingan.info/#/event/mask" role="button" class="btn btn-outline-primary">口罩狀況地圖 by 究心公益科技</a>
+                        <a href="https://mowd.tw/mask/" role="button" class="btn btn-outline-primary">口罩熱度圖 by 陳柏宇</a>
+                        <a href="https://mask.chel.in/" role="button" class="btn btn-outline-primary">口罩指南 by 詹喆麟、楊奇永</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
